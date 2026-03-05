@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Memory Game</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Memory Matching Game</h1>
+<p>2 Players - 12 Cards - Find all 6 pairs!</p>
+
+<div id="scoreboard">
+  <div id="p1box" class="pbox">
+    <p class="pname">Player 1</p>
+    <p id="p1score">0</p>
+    <p id="p1turn">YOUR TURN</p>
+  </div>
+  <div id="vsdiv">VS</div>
+  <div id="p2box" class="pbox">
+    <p class="pname">Player 2</p>
+    <p id="p2score">0</p>
+    <p id="p2turn">YOUR TURN</p>
+  </div>
+</div>
+
+<p id="message">Player 1 go first, pick 2 cards!</p>
+
+<div id="grid"></div>
+
+<br>
+<button id="newgame">New Game</button>
+<button id="rules">Rules</button>
+
+<div id="winscreen">
+  <div id="winbox">
+    <p id="wintrophy">🏆</p>
+    <h2 id="winmsg">Player 1 Wins!</h2>
+    <p id="windesc">All pairs found!</p>
+    <p>Player 1: <span id="fp1">0</span> &nbsp; Player 2: <span id="fp2">0</span></p>
+    <br>
+    <button id="playagain">Play Again</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
